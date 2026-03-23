@@ -106,7 +106,7 @@ export default function Hero() {
               <TypewriterHighlight text="Bring Light to the Chaos" highlight="Light" highlightClass="text-valo" delay={0.5} duration={1.8} />
             </h1>
             <p className="font-heading font-bold text-xl sm:text-2xl md:text-3xl text-white mt-3 tracking-[-0.01em]">
-              <Typewriter text="Your AI Workforce, Deployed in 48 Hours." delay={2.5} duration={1.7} />
+              <TypewriterHighlight text="Your AI Workforce, Deployed in 48 Hours." highlight="48 Hours" highlightClass="text-valo" delay={2.5} duration={1.7} />
             </p>
           </motion.div>
 

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Check, UserPlus, Users, LayoutDashboard, Zap, Shield, Rocket } from 'lucide-react'
+import { Check, Shield } from 'lucide-react'
 import SectionLabel from '@/components/ui/SectionLabel'
 import { GlowingEffect } from '@/components/ui/glowing-effect'
 
@@ -14,15 +14,6 @@ const valueItems = [
   '1 custom automation (morning brief, email alerts, or your choice)',
   '14-day ValoGuard support',
   'Complete handover documentation. You own everything',
-]
-
-const addons = [
-  { icon: UserPlus, title: 'Add an Agent', desc: 'Deploy a second agent for a different role,Sales, Finance, Content, or shared EA. Own identity, tools, and automations.', price: '$1,500', sub: 'one-time', highlighted: false },
-  { icon: Users, title: 'ValoTeam', desc: '3-5 specialized sub-agents under your main agent. Research, content, monitoring, CRM, ops,parallel processing with shared intelligence.', price: '$3,500', sub: 'one-time', highlighted: false },
-  { icon: LayoutDashboard, title: 'ValoCommand', desc: 'Custom mission control dashboard. Calendar view, memory browser, document library, agent team visualization, and kanban task board.', price: '$2,000', sub: 'one-time', highlighted: false },
-  { icon: Zap, title: 'ValoConnect', desc: 'Deep integration with your stack: HubSpot, Salesforce, Stripe, Shopify, Notion,up to 5 custom tool connections via secure Zapier MCP.', price: '$2,000', sub: 'one-time', highlighted: false },
-  { icon: Shield, title: 'ValoGuard Monthly', desc: 'Ongoing managed care: monthly optimization call, new agent builds, priority troubleshooting, update management, continuous workflow tuning.', price: '$750', sub: '/month', highlighted: false },
-  { icon: Rocket, title: 'ValoForce', desc: 'The full arsenal. Main agent + 3 sub-agents + ValoCommand + ValoConnect + ValoGuard. Your complete AI workforce deployed in one engagement.', price: '$10,000', sub: 'one-time', sub2: '+ $750/mo', highlighted: true },
 ]
 
 export default function OfferStack() {
@@ -69,31 +60,30 @@ export default function OfferStack() {
           </div>
         </motion.div>
 
-        {/* Add-ons */}
-        <div className="mt-16 text-center max-w-3xl mx-auto">
-          <motion.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-heading text-xl md:text-2xl font-bold text-white mb-4">Scale Your Light.</motion.h3>
-          <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="text-sm text-white max-w-2xl mx-auto mb-12 leading-relaxed">
-            ValoCore is your foundation. These add-ons turn one agent into a full autonomous workforce.
-          </motion.p>
-        </div>
-
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="grid md:grid-cols-3 gap-4">
-          {addons.map((a) => (
-            <div key={a.title} className="relative rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3">
-              <GlowingEffect spread={40} glow disabled={false} proximity={64} inactiveZone={0.01} borderWidth={3} />
-              <div className="relative flex flex-col h-full overflow-hidden rounded-xl border-[0.75px] border-border bg-surface p-6">
-                {a.highlighted && <span className="absolute top-4 right-4 text-[10px] uppercase tracking-wider bg-elevated text-white border border-border-hover rounded-full px-2 py-0.5">Best Value</span>}
-                <a.icon className="w-6 h-6 mb-4 text-white" />
-                <h4 className="font-heading font-semibold text-white text-base mb-2">{a.title}</h4>
-                <p className="text-sm text-white leading-relaxed mb-4 flex-1">{a.desc}</p>
-                <div>
-                  <span className="font-mono text-lg font-bold text-white">{a.price}</span>
-                  <span className="text-xs text-white/60 ml-1">{a.sub}</span>
-                  {'sub2' in a && a.sub2 && <span className="block text-xs text-white/60 mt-0.5">{a.sub2}</span>}
-                </div>
-              </div>
-            </div>
-          ))}
+        {/* Beyond ValoCore */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          className="mt-16 text-center max-w-2xl mx-auto"
+        >
+          <span className="text-xs uppercase tracking-widest text-[#999999]">
+            &mdash; Beyond ValoCore
+          </span>
+          <h3 className="font-heading text-2xl md:text-3xl font-bold text-white mt-6">
+            Need More Than an Assistant?
+          </h3>
+          <p className="font-body text-sm md:text-base text-[#b0b0b0] mt-4 leading-relaxed">
+            ValoPrime is our bespoke engagement for founders who want more than
+            a setup. We audit your entire operation, identify every hour
+            you&apos;re wasting, and build the AI infrastructure to get it back.
+            Custom agents, custom workflows, custom integrations, architected
+            around how your business actually runs. Apply on your discovery call.
+          </p>
+          <p className="text-xs text-[#888888] mt-6 italic">
+            Limited availability. Pricing based on scope.
+          </p>
         </motion.div>
 
         {/* Guarantee */}
