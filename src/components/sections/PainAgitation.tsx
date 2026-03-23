@@ -51,7 +51,7 @@ const pains = [
 
 export default function PainAgitation() {
   return (
-    <section className="bg-bg py-32 md:py-40 lg:py-48 px-5 md:px-8">
+    <section id="problem" className="bg-bg py-16 md:py-20 lg:py-24 px-5 md:px-8">
       <div className="max-w-3xl mx-auto text-center">
         <SectionLabel>The Darkness</SectionLabel>
 
@@ -105,7 +105,7 @@ export default function PainAgitation() {
           ))}
         </motion.div>
 
-        <div className="mt-16 text-center max-w-3xl mx-auto">
+        <div className="mt-10 text-center max-w-3xl mx-auto">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

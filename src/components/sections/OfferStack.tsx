@@ -4,24 +4,23 @@ import SectionLabel from '@/components/ui/SectionLabel'
 import { GlowingEffect } from '@/components/ui/glowing-effect'
 
 const valueItems = [
-  { desc: '45-minute strategic discovery session', value: '$500' },
-  { desc: 'Dedicated cloud VPS provisioned and deployed', value: '$800' },
-  { desc: 'Full personality and business context programming', value: '$600' },
-  { desc: 'Military-grade security hardening (sandbox, firewall, kill switch)', value: '$1,500' },
-  { desc: 'Smart model routing — saves you 40-60% on monthly AI costs', value: '$1,000' },
-  { desc: 'Telegram + Discord multi-channel command center', value: '$600' },
-  { desc: 'Google Workspace deep integration (Gmail, Calendar, Drive)', value: '$800' },
-  { desc: 'AI-powered research with Perplexity Pro', value: '$400' },
-  { desc: '3 custom automations tailored to your workflows', value: '$1,500' },
-  { desc: '14-day ValoGuard hypercare support', value: '$2,000' },
-  { desc: 'Complete handover documentation — you own everything', value: '$400' },
+  'Discovery call to map your workflows and goals',
+  'Dedicated cloud server provisioned and deployed',
+  'Full personality and business context programming',
+  'Security hardening (sandbox, firewall, spend limits, kill switch)',
+  'Optimised AI model configuration. Your AI runs for $20-55/month, not $200-500/month like most setups',
+  'Telegram setup. Text your AI like a personal assistant',
+  'Google Workspace integration (Gmail, Calendar, Drive)',
+  '1 custom automation (morning brief, email alerts, or your choice)',
+  '14-day ValoGuard support',
+  'Complete handover documentation. You own everything',
 ]
 
 const addons = [
-  { icon: UserPlus, title: 'Add an Agent', desc: 'Deploy a second agent for a different role — Sales, Finance, Content, or shared EA. Own identity, tools, and automations.', price: '$1,500', sub: 'one-time', highlighted: false },
-  { icon: Users, title: 'ValoTeam', desc: '3-5 specialized sub-agents under your main agent. Research, content, monitoring, CRM, ops — parallel processing with shared intelligence.', price: '$3,500', sub: 'one-time', highlighted: false },
+  { icon: UserPlus, title: 'Add an Agent', desc: 'Deploy a second agent for a different role,Sales, Finance, Content, or shared EA. Own identity, tools, and automations.', price: '$1,500', sub: 'one-time', highlighted: false },
+  { icon: Users, title: 'ValoTeam', desc: '3-5 specialized sub-agents under your main agent. Research, content, monitoring, CRM, ops,parallel processing with shared intelligence.', price: '$3,500', sub: 'one-time', highlighted: false },
   { icon: LayoutDashboard, title: 'ValoCommand', desc: 'Custom mission control dashboard. Calendar view, memory browser, document library, agent team visualization, and kanban task board.', price: '$2,000', sub: 'one-time', highlighted: false },
-  { icon: Zap, title: 'ValoConnect', desc: 'Deep integration with your stack: HubSpot, Salesforce, Stripe, Shopify, Notion — up to 5 custom tool connections via secure Zapier MCP.', price: '$2,000', sub: 'one-time', highlighted: false },
+  { icon: Zap, title: 'ValoConnect', desc: 'Deep integration with your stack: HubSpot, Salesforce, Stripe, Shopify, Notion,up to 5 custom tool connections via secure Zapier MCP.', price: '$2,000', sub: 'one-time', highlighted: false },
   { icon: Shield, title: 'ValoGuard Monthly', desc: 'Ongoing managed care: monthly optimization call, new agent builds, priority troubleshooting, update management, continuous workflow tuning.', price: '$750', sub: '/month', highlighted: false },
   { icon: Rocket, title: 'ValoForce', desc: 'The full arsenal. Main agent + 3 sub-agents + ValoCommand + ValoConnect + ValoGuard. Your complete AI workforce deployed in one engagement.', price: '$10,000', sub: 'one-time', sub2: '+ $750/mo', highlighted: true },
 ]
@@ -32,7 +31,7 @@ export default function OfferStack() {
   }
 
   return (
-    <section id="offer" className="bg-bg py-32 md:py-40 lg:py-48 px-5 md:px-8">
+    <section id="offer" className="bg-bg py-16 md:py-20 lg:py-24 px-5 md:px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center max-w-3xl mx-auto">
           <SectionLabel>Your Deployment</SectionLabel>
@@ -49,37 +48,29 @@ export default function OfferStack() {
           <GlowingEffect spread={50} glow disabled={false} proximity={80} inactiveZone={0.01} borderWidth={4} />
           <div className="relative overflow-hidden rounded-xl border-[0.75px] border-border bg-surface p-8 md:p-10">
             <span className="text-xs uppercase tracking-widest text-white/70">ValoCore</span>
-            <p className="font-body text-sm text-white mt-3">Your AI chief of staff — deployed, hardened, and running in 48 hours.</p>
+            <p className="font-body text-sm text-white mt-3">Your AI assistant, deployed, secured, and running in 48 hours.</p>
             <div className="mt-6">
-              <span className="font-mono text-4xl font-bold text-white">$4,000</span>
+              <span className="font-mono text-4xl font-bold text-white">$2,795</span>
               <span className="text-xs text-white/60 ml-2">one-time setup</span>
             </div>
-            <p className="text-xs text-valo mt-1">Most clients see full ROI within 30 days.</p>
 
             <div className="mt-8 space-y-3">
               {valueItems.map((item) => (
-                <div key={item.desc} className="flex items-start gap-3">
+                <div key={item} className="flex items-start gap-3">
                   <Check className="w-4 h-4 text-valo shrink-0 mt-0.5" />
-                  <span className="text-sm text-white flex-1">{item.desc}</span>
-                  <span className="font-mono text-xs text-white/50 line-through whitespace-nowrap">{item.value}</span>
+                  <span className="text-sm text-white">{item}</span>
                 </div>
               ))}
             </div>
 
-            <div className="border-t border-border my-6" />
-            <div className="text-center space-y-1">
-              <p className="font-mono text-xs text-white/50 line-through">Total Value: $10,100</p>
-              <p className="font-mono text-2xl font-bold text-white">$4,000</p>
-              <p className="text-sm text-valo font-medium">You save $6,100</p>
-            </div>
-            <button onClick={scrollToBook} className="w-full mt-6 py-3.5 bg-white text-black rounded-lg text-sm font-medium cursor-pointer hover:bg-white/90 transition-colors duration-200">
+            <button onClick={scrollToBook} className="w-full mt-8 py-3.5 bg-white text-black rounded-lg text-sm font-medium cursor-pointer hover:bg-white/90 transition-colors duration-200">
               Book Your Discovery Call &rarr;
             </button>
           </div>
         </motion.div>
 
         {/* Add-ons */}
-        <div className="mt-24 text-center max-w-3xl mx-auto">
+        <div className="mt-16 text-center max-w-3xl mx-auto">
           <motion.h3 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-heading text-xl md:text-2xl font-bold text-white mb-4">Scale Your Light.</motion.h3>
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="text-sm text-white max-w-2xl mx-auto mb-12 leading-relaxed">
             ValoCore is your foundation. These add-ons turn one agent into a full autonomous workforce.

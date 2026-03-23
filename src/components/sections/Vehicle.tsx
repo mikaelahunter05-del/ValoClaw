@@ -31,12 +31,12 @@ const mobileOrder = ['order-last md:order-first', 'order-last md:order-none', 'o
 
 export default function Vehicle() {
   return (
-    <section className="bg-bg py-32 md:py-40 lg:py-48 px-5 md:px-8">
+    <section id="technology" className="bg-bg py-16 md:py-20 lg:py-24 px-5 md:px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center max-w-3xl mx-auto">
           <SectionLabel>The Technology</SectionLabel>
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-heading text-2xl md:text-3xl font-bold text-white mb-4 tracking-[-0.02em]">
-            This Isn&apos;t a Chatbot. It&apos;s Your Back Office — Illuminated.
+            This Isn&apos;t a Chatbot. It&apos;s Your Back Office. Illuminated.
           </motion.h2>
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-body text-sm md:text-base text-white max-w-2xl mx-auto mb-16 leading-relaxed">
             OpenClaw is the most powerful open-source AI agent ever built. We configure, deploy, and manage it so it works for you around the clock.

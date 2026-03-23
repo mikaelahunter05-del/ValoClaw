@@ -17,7 +17,7 @@ export default function WhyNotDIY() {
   }
 
   return (
-    <section className="bg-bg py-32 md:py-40 lg:py-48 px-5 md:px-8">
+    <section className="bg-bg py-16 md:py-20 lg:py-24 px-5 md:px-8">
       <div className="max-w-3xl mx-auto">
         <div className="text-center">
           <SectionLabel>The Hard Truth</SectionLabel>
@@ -50,10 +50,10 @@ export default function WhyNotDIY() {
           <div className="relative overflow-hidden rounded-xl border-[0.75px] border-border bg-surface p-8">
             <h3 className="font-heading text-base font-semibold text-white">Your Time Has a Price Tag.</h3>
             <p className="font-body text-sm text-white mt-3 leading-relaxed">
-              At even $300/hour for a founder&apos;s time, 15 hours of fumbling in the dark costs $4,500 in opportunity cost alone — and you still won&apos;t have the security hardening, model routing, or multi-agent architecture we deploy in 48 hours.
+              At even $300/hour for a founder&apos;s time, 15 hours of fumbling in the dark costs $4,500 in opportunity cost alone. And you still won&apos;t have the security hardening, model routing, or multi-agent architecture we deploy in 48 hours.
             </p>
             <p className="text-white text-sm font-medium mt-4">
-              Or you hand it to us for $4,000 and wake up with the{' '}<span className="text-valo">lights on</span>.
+              Or you hand it to us for $2,795 and wake up with the{' '}<span className="text-valo">lights on</span>.
             </p>
             <button onClick={scrollToOffer} className="mt-8 px-6 py-3 border border-white text-white bg-transparent rounded-lg text-sm font-medium cursor-pointer hover:bg-white hover:text-black transition-all duration-200">
               Let Us Build It &rarr;

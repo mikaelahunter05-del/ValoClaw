@@ -5,7 +5,7 @@ import { GlowingEffect } from '@/components/ui/glowing-effect'
 
 export default function SocialProof() {
   return (
-    <section className="bg-bg py-24 md:py-32 px-5 md:px-8">
+    <section id="about" className="bg-bg py-16 md:py-20 lg:py-24 px-5 md:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center">
           <SectionLabel>Who&apos;s Behind This</SectionLabel>
@@ -19,21 +19,21 @@ export default function SocialProof() {
           transition={{ duration: 0.4 }}
           className="grid md:grid-cols-2 gap-12 items-center mt-8"
         >
-          {/* Left — Photo */}
+          {/* Left - Photo */}
           <div className="max-w-sm mx-auto w-full">
             <div className="relative rounded-[1.25rem] border-[0.75px] border-[#222222] p-2 md:rounded-[1.5rem] md:p-3">
               <GlowingEffect spread={40} glow disabled={false} proximity={64} inactiveZone={0.01} borderWidth={3} />
               <div className="relative overflow-hidden rounded-2xl">
                 <img
                   src="/video/Owner-Photo.jpeg"
-                  alt="Kyle Holland — Founder of ValoClaw"
+                  alt="Kyle Holland, Founder of ValoClaw"
                   className="w-full h-auto rounded-2xl"
                 />
               </div>
             </div>
           </div>
 
-          {/* Right — Bio */}
+          {/* Right - Bio */}
           <div>
             <h3 className="font-heading text-2xl font-bold text-white">
               Kyle Holland
@@ -44,7 +44,7 @@ export default function SocialProof() {
 
             <div className="space-y-4 mt-6">
               <p className="text-sm text-[#b0b0b0] leading-relaxed">
-                12 years building operational infrastructure for businesses — from
+                12 years building operational infrastructure for businesses, from
                 &pound;40M professional services firms to regulated medical device
                 manufacturers. CRM implementations, workflow automation,
                 AI-assisted research pipelines, digital transformation across the

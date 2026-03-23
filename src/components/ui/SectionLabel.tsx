@@ -14,7 +14,7 @@ export default function SectionLabel({ children, className = '' }: SectionLabelP
       transition={{ duration: 0.4 }}
       className={`inline-block text-xs uppercase tracking-[0.25em] font-medium font-body text-white/60 mb-6 ${className}`}
     >
-      &mdash; {children}
+      {children}
     </motion.span>
   )
 }

@@ -18,7 +18,7 @@ export default function DreamOutcome() {
   }
 
   return (
-    <section className="bg-bg py-32 md:py-40 lg:py-48 px-5 md:px-8">
+    <section className="bg-bg py-16 md:py-20 lg:py-24 px-5 md:px-8">
       <div className="max-w-3xl mx-auto">
         <div className="text-center">
           <SectionLabel>The Light</SectionLabel>
@@ -52,7 +52,7 @@ export default function DreamOutcome() {
           </div>
         </motion.div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-8 text-center">
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-heading text-xl md:text-2xl font-bold text-white">
             This isn&apos;t a future roadmap. It&apos;s running for our clients right now.
           </motion.p>

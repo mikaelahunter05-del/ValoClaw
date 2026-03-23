@@ -6,7 +6,7 @@ import { GlowingEffect } from '@/components/ui/glowing-effect'
 export default function FinalCTA() {
   return (
     <>
-      <section id="book" className="bg-bg py-32 md:py-40 lg:py-48 px-5 md:px-8">
+      <section id="book" className="bg-bg py-16 md:py-20 lg:py-24 px-5 md:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <SectionLabel>Your Move</SectionLabel>
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-heading text-3xl md:text-4xl font-bold text-white tracking-[-0.02em]">
