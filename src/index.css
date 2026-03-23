@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/600.css";
+@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/700.css";
+
+@theme {
+  --color-bg: #0a0a0a;
+  --color-surface: #111111;
+  --color-elevated: #1a1a1a;
+  --color-input: #0d0d0d;
+  --color-border: #222222;
+  --color-border-hover: #333333;
+  --color-border-accent: #444444;
+  --color-primary: #ffffff;
+  --color-secondary: #ffffff;
+  --color-tertiary: #cccccc;
+  --color-valo: #00D4FF;
+
+  --color-background: #111111;
+  --color-foreground: #ffffff;
+  --color-muted: #1a1a1a;
+  --color-muted-foreground: #ffffff;
+  --color-black: #0a0a0a;
+
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  --black: #0a0a0a;
+  --background: #111111;
+  --foreground: #ffffff;
+  --border: #222222;
+  --muted: #1a1a1a;
+  --muted-foreground: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: #00D4FF;
+  color: #0a0a0a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Logo ticker pause on hover */
+.ticker-track:hover {
+  animation-play-state: paused;
+}
