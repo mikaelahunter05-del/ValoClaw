@@ -3,13 +3,13 @@ import SectionLabel from '@/components/ui/SectionLabel'
 import { GlowingEffect } from '@/components/ui/glowing-effect'
 
 const entries = [
-  { time: '6:45 AM', title: '47 emails handled before your alarm.', desc: 'Urgent items flagged. Routine replies drafted and waiting for one-tap approval. Junk filtered. Your inbox went from 47 to 4.' },
-  { time: '7:00 AM', title: 'A morning brief arrives on your phone.', desc: 'Today\u2019s meetings with attendee backgrounds and prep notes. 3 priorities ranked by impact. 1 competitor move you need to know about. 90-second read.' },
-  { time: '9:15 AM', title: 'VIP investor emails. Handled in one tap.', desc: 'Your AI drafted a response in your voice, checked calendar availability, and queued a follow-up task. You tapped approve. Total effort: one thumb.' },
-  { time: '11:30 AM', title: 'Running late. One text fixes everything.', desc: 'You text \u2018running 10 min late to the Acme call.\u2019 Your AI emails attendees, shifts the calendar, and reschedules the overlap. Done before your next sip of coffee.' },
-  { time: '2:00 PM', title: 'A competitor moves. You knew first.', desc: 'Your research agent scans Reddit, X, and industry news 24/7. The briefing hit your Discord channel before their press release went live.' },
-  { time: '6:00 PM', title: 'End-of-day digest: you spent 12 minutes on admin today.', desc: '47 emails handled. 3 meetings prepped. 2 research reports. 1 content draft ready. Your AI workforce ran the engine. You steered.' },
-  { time: '11:00 PM', title: 'You\u2019re asleep. Your AI isn\u2019t.', desc: 'Monitoring for VIP emails. Holding everything else until morning. No anxiety. No mental checklists. Just rest.' },
+  { time: '6:45 AM', title: '23 emails handled before your first cup of coffee.', desc: 'Client scheduling requests confirmed. Referral introductions flagged. Session reminders sent. Admin noise filtered. Your inbox went from 23 to 3, and those 3 actually matter.' },
+  { time: '7:00 AM', title: 'A morning brief arrives on your phone.', desc: 'Today\'s coaching sessions with client backgrounds and progress notes. 2 proposals awaiting follow-up. 1 referral that came in overnight. A competitor just launched a new group programme. You know before they announce it. 90-second read.' },
+  { time: '9:00 AM', title: 'Your first session starts. You\'re already prepped.', desc: 'Your AI pulled the client\'s last session notes, their action items, their LinkedIn activity since your last call, and their company\'s recent news. You walk in knowing more about their week than they expect. That\'s the prep that turns good coaching into unforgettable coaching.' },
+  { time: '11:30 AM', title: 'A prospect who ghosted 9 days ago just replied.', desc: 'Because your AI sent follow-up number four, a case study about a similar executive who doubled their leadership pipeline. You didn\'t write it. You didn\'t remember to send it. Your AI did. The prospect wants to book a discovery call.' },
+  { time: '2:00 PM', title: 'Session recap done in 90 seconds.', desc: 'Your AI captured the key themes, decisions, and action items from the session transcript. You reviewed, tweaked one line, and hit send. Your client received a polished summary with their next steps before they got back to their desk. Last month that took you 35 minutes per session.' },
+  { time: '6:00 PM', title: 'End-of-day digest: you spent 14 minutes on admin today.', desc: '23 emails handled. 4 sessions prepped. 2 recaps sent. 1 proposal drafted. 1 ghosted prospect re-engaged. Your AI practice manager ran the engine. You coached.' },
+  { time: '11:00 PM', title: 'You\'re asleep. Your AI isn\'t.', desc: 'Monitoring for urgent client emails. Holding everything else until morning. No mental checklist of who you forgot to follow up with. No Sunday-night dread about Monday\'s prep. Just rest.' },
 ]
 
 export default function DreamOutcome() {
@@ -29,7 +29,6 @@ export default function DreamOutcome() {
 
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="relative">
           <div className="hidden md:block absolute left-[52px] top-2 bottom-2 w-px bg-border" />
-
           <div className="flex flex-col gap-6">
             {entries.map((e) => (
               <div key={e.time} className="flex flex-col md:flex-row md:items-start gap-2 md:gap-0">
@@ -54,7 +53,7 @@ export default function DreamOutcome() {
 
         <div className="mt-8 text-center">
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-heading text-xl md:text-2xl font-bold text-white">
-            This isn&apos;t a future roadmap. It&apos;s running for our clients right now.
+            This isn&apos;t a future roadmap. It&apos;s running for our coaching clients right now.
           </motion.p>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-8">
             <button onClick={scrollToOffer} className="px-6 py-3 border border-white text-white bg-transparent rounded-lg text-sm font-medium cursor-pointer hover:bg-white hover:text-black transition-all duration-200">

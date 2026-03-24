@@ -4,13 +4,13 @@ import SectionLabel from '@/components/ui/SectionLabel'
 import { GlowingEffect } from '@/components/ui/glowing-effect'
 
 const columns = [
-  { badge: 'The Chatbot', header: 'ChatGPT / Claude', Icon: X, iconColor: 'text-white/50', spread: 30, items: ['Forgets you every single session', 'You visit it. It never comes to you.', 'Can only answer questions', 'Zero access to your tools', 'Stops the moment you close the tab'] },
-  { badge: 'The Human', header: 'Executive Assistant', Icon: Minus, iconColor: 'text-white/50', spread: 30, items: ['$70K+ before benefits and overhead', 'Works 9-5. Takes sick days.', 'Weeks to train. Months to trust.', "Can't operate 15 tools at once", 'Quits and takes your context with them'] },
-  { badge: 'Recommended', header: 'ValoClaw', Icon: Check, iconColor: 'text-valo', recommended: true, spread: 40, items: ['Remembers everything. Gets smarter daily.', 'Lives on your phone. Messages you first.', 'Takes action: email, calendar, research, CRM, content', 'Connects to Gmail, Slack, Notion, Stripe + 10,000 tools', 'Runs 24/7. Never sleeps. Never quits. $0 salary.'] },
+  { badge: 'The Chatbot', header: 'ChatGPT / Claude', Icon: X, iconColor: 'text-white/50', spread: 30, items: ['Forgets your clients every single session', 'You visit it. It never comes to you.', 'Can only answer questions', 'Zero access to your calendar, email, or CRM', 'Stops the moment you close the tab'] },
+  { badge: 'The Human', header: 'Virtual Assistant / Setter', Icon: Minus, iconColor: 'text-white/50', spread: 30, items: ['$4,000-$6,500/month before you train them', 'Works 9-5. Takes sick days. Takes holidays.', 'Weeks to train on your frameworks and client voice', 'Can\'t operate 15 tools simultaneously', 'Quits and takes your operational memory with them'] },
+  { badge: 'Recommended', header: 'ValoClaw', Icon: Check, iconColor: 'text-valo', recommended: true, spread: 40, items: ['Remembers every client, every session, every preference. Gets smarter daily.', 'Lives on your phone. Messages you first.', 'Takes action: email triage, session prep, follow-ups, proposals, content, research', 'Connects to Gmail, Google Calendar, Zoom, HubSpot, Stripe, Calendly + 10,000 tools', 'Runs 24/7. Never sleeps. Never quits. Never asks for a raise.'] },
 ]
 
-const row1 = ['Gmail', 'Google Calendar', 'Slack', 'Discord', 'Notion', 'HubSpot', 'Salesforce', 'Stripe', 'Zapier', 'Trello']
-const row2 = ['Shopify', 'WhatsApp', 'Telegram', 'Zoom', 'GitHub', 'Google Drive', 'Sheets', 'iMessage', 'Linear', 'Airtable']
+const row1 = ['Gmail', 'Google Calendar', 'Zoom', 'HubSpot', 'Stripe', 'Calendly', 'Slack', 'Notion', 'Zapier', 'WhatsApp']
+const row2 = ['Telegram', 'Google Drive', 'Sheets', 'Discord', 'Salesforce', 'Trello', 'Airtable', 'iMessage', 'Linear', 'Shopify']
 
 function LogoTicker({ items, direction }: { items: string[]; direction: 'left' | 'right' }) {
   const doubled = [...items, ...items]
@@ -36,10 +36,10 @@ export default function Vehicle() {
         <div className="text-center max-w-3xl mx-auto">
           <SectionLabel>The Technology</SectionLabel>
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-heading text-2xl md:text-3xl font-bold text-white mb-4 tracking-[-0.02em]">
-            This Isn&apos;t a Chatbot. It&apos;s Your Back Office. Illuminated.
+            This Isn&apos;t a Chatbot. It&apos;s Your Practice Manager. Automated.
           </motion.h2>
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-body text-sm md:text-base text-white max-w-2xl mx-auto mb-16 leading-relaxed">
-            OpenClaw is the most powerful open-source AI agent ever built. We configure, deploy, and manage it so it works for you around the clock.
+            OpenClaw is the most powerful open-source AI agent ever built. We configure, deploy, and manage it so it runs your coaching practice around the clock.
           </motion.p>
         </div>
 

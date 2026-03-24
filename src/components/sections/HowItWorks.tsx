@@ -4,9 +4,9 @@ import SectionLabel from '@/components/ui/SectionLabel'
 import { GlowingEffect } from '@/components/ui/glowing-effect'
 
 const steps = [
-  { num: '01', icon: Phone, title: 'Discovery Call', badge: '45 mins', desc: 'We learn your business, map your workflows, and design your deployment. No jargon. No pressure. Just a clear plan.' },
-  { num: '02', icon: Wrench, title: 'We Build Everything', badge: '24-48 hours', desc: 'We deploy your instance, program your AI, connect your tools, harden security, build automations, and test. You don\u2019t touch a terminal.' },
-  { num: '03', icon: Rocket, title: 'The Lights Come On', badge: 'Same day', desc: 'Open Telegram. Text your AI. It responds. It starts learning your business. We provide 14 days of ValoGuard to perfect everything.' },
+  { num: '01', icon: Phone, title: 'Discovery Call', badge: '45 mins', desc: 'We learn your coaching practice, map your client journey, and design your deployment. We\'ll ask about your session cadence, your biggest admin time-sinks, your follow-up process, and your client acquisition channels. No jargon. No pressure. Just a clear plan tailored to how you actually coach.' },
+  { num: '02', icon: Wrench, title: 'We Build Everything', badge: '24-48 hours', desc: 'We deploy your instance, program your AI with your coaching context and frameworks, connect your tools, harden security, build your automations, and test everything end-to-end. You don\'t touch a terminal.' },
+  { num: '03', icon: Rocket, title: 'The Lights Come On', badge: 'Same day', desc: 'Open Telegram. Text your AI. It responds with your first morning brief. It already knows your clients, your calendar, and your priorities. We provide 14 days of ValoGuard to perfect everything, adjusting your session prep format, refining your follow-up sequences, and tuning your morning brief to exactly what you need.' },
 ]
 
 export default function HowItWorks() {
@@ -20,7 +20,7 @@ export default function HowItWorks() {
         <div className="text-center max-w-3xl mx-auto">
           <SectionLabel>The Process</SectionLabel>
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-heading text-2xl md:text-3xl font-bold text-white mb-16 tracking-[-0.02em]">
-            Three Steps. 48 Hours. The Lights Come On.
+            Three Steps. 48 Hours. Your Practice Runs Itself.
           </motion.h2>
         </div>
 
@@ -44,7 +44,7 @@ export default function HowItWorks() {
 
         <div className="mt-12 text-center">
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="text-sm text-white mb-6">
-            Most clients are live within 48 hours of the discovery call.
+            Most coaching clients are live within 48 hours of the discovery call.
           </motion.p>
           <button onClick={scrollToBook} className="px-6 py-3 border border-white text-white bg-transparent rounded-lg text-sm font-medium cursor-pointer hover:bg-white hover:text-black transition-all duration-200">
             Book Your Discovery Call &rarr;

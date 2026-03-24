@@ -2,8 +2,9 @@ import { motion } from 'framer-motion'
 import {
   Clock,
   Brain,
-  Moon,
-  DollarSign,
+  Megaphone,
+  MailX,
+  UserX,
   AlertTriangle,
   TrendingDown,
 } from 'lucide-react'
@@ -13,39 +14,45 @@ import { GlowingEffect } from '@/components/ui/glowing-effect'
 const pains = [
   {
     icon: Clock,
-    title: '3+ hours a day on email, scheduling, and admin.',
+    title: '30-45 minutes of admin wrapped around every single session.',
     detail:
-      'That\u2019s 780 hours a year. You could\u2019ve launched two new products, closed 50 more deals, or actually taken a holiday.',
+      'That\'s 15-30 hours a month on notes, follow-ups, action plans, and prep. Not coaching. Not selling. Not thinking. Just admin that eats your calendar alive.',
   },
   {
     icon: Brain,
-    title: 'Your strategic brain is being wasted on logistics.',
+    title: 'You have 12-13 clients. You should have 20.',
     detail:
-      'Every context switch between inbox and big-picture thinking costs you 23 minutes of deep focus. Multiply that across a day. That\u2019s where your best ideas go to die.',
+      'ICF data shows the average coach works with 12-13 active clients. Not because demand isn\'t there, because 64% of coaches say client acquisition is their number one challenge. Your pipeline isn\'t cold. It\'s unworked.',
   },
   {
-    icon: Moon,
-    title: 'You go to bed running a mental checklist of what slipped.',
+    icon: Megaphone,
+    title: 'You post on LinkedIn once a week, maybe.',
     detail:
-      'The follow-up you forgot. The email sitting in drafts. The meeting you walked into blind. Every single night, the same quiet dread.',
+      'Only 1% of LinkedIn users post weekly. You know content drives inbound. You know coaches who post 3-5 times a week get 45-67% more engagement. But between session prep and email, who has the time?',
   },
   {
-    icon: DollarSign,
-    title: 'Your EA costs $70K+ and still can\u2019t keep up.',
+    icon: MailX,
+    title: '80% of your deals need 5+ follow-ups. You send one.',
     detail:
-      'They call in sick. They quit. They can\u2019t work at 2am when your investor in Singapore emails. And when they leave, your entire operational memory walks out the door.',
+      'Sales research is brutal: 44% of professionals stop after a single follow-up. Meanwhile, your best-fit prospects are sitting in your inbox waiting for touch number three, four, five. They\'re not saying no. They\'re being forgotten.',
+  },
+  {
+    icon: UserX,
+    title: 'Your VA costs $4,000-$6,500/month and still can\'t prep a session brief.',
+    detail:
+      'They handle scheduling. Maybe invoicing. But they can\'t research a new client\'s LinkedIn at 11pm, draft a proposal in your voice, or monitor your competitors while you sleep. And when they quit, your entire operational memory walks out the door.',
   },
   {
     icon: AlertTriangle,
-    title: 'You\u2019ve tried AI tools. They forgot you by Tuesday.',
+    title: 'You\'ve tried AI tools. They forgot your client roster by Wednesday.',
     detail:
-      'ChatGPT resets every session. You tried setting up your own AI agent \u2014 spent a weekend watching tutorials, broke the config, gave up. You\u2019re not alone.',
+      'ChatGPT resets every session. You spent a weekend watching tutorials about building your own AI agent. Broke the config. Gave up. You\'re not alone, and it\'s not your fault.',
   },
   {
     icon: TrendingDown,
-    title: 'Every day without leverage is a day you\u2019re losing ground.',
+    title: 'Every week without systems is a week you\'re leaking revenue.',
     detail:
-      'The founders winning right now have autonomous AI running their operations 24/7. While you\u2019re manually triaging email, they\u2019re three moves ahead. The gap is widening.',
+      'The coaches winning right now have AI handling their admin, their follow-ups, their content, and their pipeline, 24/7. While you\'re manually typing session recaps, they\'re closing their next $15,000 engagement. The gap is widening.',
   },
 ]
 
@@ -62,7 +69,7 @@ export default function PainAgitation() {
           transition={{ duration: 0.4 }}
           className="font-heading text-2xl md:text-3xl font-bold text-white mb-8 tracking-[-0.02em]"
         >
-          You Didn&apos;t Start a Company to Drown in Your Inbox.
+          You Didn&apos;t Become a Coach to Drown in Admin.
         </motion.h2>
 
         <motion.p
@@ -72,9 +79,9 @@ export default function PainAgitation() {
           transition={{ duration: 0.4 }}
           className="font-body text-sm md:text-base text-white max-w-2xl mx-auto mb-16 leading-relaxed"
         >
-          But here you are. The CEO who&apos;s also the executive assistant,
-          the project manager, the follow-up machine, and the person who still
-          hasn&apos;t replied to that investor from Thursday.
+          But here you are. The executive coach who&apos;s also the appointment
+          setter, the content writer, the invoice chaser, and the person who
+          still hasn&apos;t sent that session recap from Tuesday.
         </motion.p>
       </div>
 
@@ -124,8 +131,8 @@ export default function PainAgitation() {
             transition={{ duration: 0.4 }}
             className="font-heading text-xl md:text-2xl font-bold mt-6 text-white"
           >
-            What if you woke up tomorrow and the{' '}
-            <span className="text-valo">lights</span> were already on?
+            What if you woke up tomorrow and your{' '}
+            <span className="text-valo">practice</span> was already running?
           </motion.p>
         </div>
       </div>

@@ -10,10 +10,10 @@ export default function FinalCTA() {
         <div className="max-w-3xl mx-auto text-center">
           <SectionLabel>Your Move</SectionLabel>
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-heading text-3xl md:text-4xl font-bold text-white tracking-[-0.02em]">
-            The <span className="text-valo">Light</span> Is Ready.
+            Your Practice Is Ready for the <span className="text-valo">Light</span>.
           </motion.h2>
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-body text-sm md:text-base text-white max-w-2xl mx-auto mt-6 mb-12 leading-relaxed">
-            45 minutes to map out exactly how an autonomous AI workforce would transform your daily operations. No pitch. No pressure. Just clarity.
+            45 minutes to map out exactly how an AI practice manager would transform your coaching operations. No pitch. No pressure. Just clarity on what 15-25 hours a week of reclaimed time looks like for your practice.
           </motion.p>
 
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="relative rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3 max-w-2xl mx-auto">
@@ -42,7 +42,7 @@ export default function FinalCTA() {
         <p className="text-xs text-white/60 mt-1">
           <a href="#" className="hover:underline">Privacy Policy</a>{' \u00B7 '}<a href="#" className="hover:underline">Terms</a>
         </p>
-        <p className="text-xs text-white/60 mt-4">Accepting new clients</p>
+        <p className="text-xs text-white/60 mt-4">Accepting new coaching clients</p>
       </footer>
     </>
   )

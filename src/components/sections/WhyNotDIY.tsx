@@ -3,12 +3,12 @@ import SectionLabel from '@/components/ui/SectionLabel'
 import { GlowingEffect } from '@/components/ui/glowing-effect'
 
 const steps = [
-  { num: 1, badge: '4 hrs', title: '4 hours watching contradicting YouTube tutorials', detail: 'Half are paid promotions for hosting companies pushing inferior setups. The other half assume you know Docker, Linux, and OAuth. You don\u2019t. That\u2019s not a character flaw.' },
+  { num: 1, badge: '4 hrs', title: '4 hours watching contradicting YouTube tutorials', detail: 'Half are paid promotions for hosting companies pushing inferior setups. The other half assume you know Docker, Linux, and OAuth. You\'re a coach, not a DevOps engineer. That\'s not a character flaw.' },
   { num: 2, badge: '6 hrs', title: '2 hours wrestling with installation', detail: 'Terminal commands, environment variables, Docker configs. One wrong character and nothing works. No error message tells you what broke or why.' },
   { num: 3, badge: '9 hrs', title: '3 hours in Google OAuth hell', detail: 'Cloud Console, enabling APIs one by one, OAuth consent screens, credentials, JSON secret files, redirect URIs that throw cryptic errors. This alone makes most people quit.' },
-  { num: 4, badge: '10 hrs', title: 'Install a skill from ClawHub. Hope it\u2019s not stealing your data.', detail: 'Security researchers found 300+ malicious skills on ClawHub. Nearly half of all reviewed skills had at least one vulnerability. Your self-install has no audit trail and no sandbox.' },
-  { num: 5, badge: '10 hrs + 3 days', title: 'It works! ...for 72 hours.', detail: 'Then tokens expire, an update breaks your config, memory drifts, and your agent forgets everything you taught it. You\u2019re back to YouTube at midnight.' },
-  { num: 6, badge: '15+ hrs gone', title: 'Attempt #2, #3, #4...', detail: 'Still no model routing, no sub-agents, no mission control, no security hardening. You have a basic chatbot on a VPS \u2014 not the AI workforce you were promised.' },
+  { num: 4, badge: '10 hrs', title: 'Install a skill from ClawHub. Hope it\'s not stealing your client data.', detail: 'Security researchers found 300+ malicious skills on ClawHub. Nearly half of all reviewed skills had at least one vulnerability. Your coaching clients\' data deserves better than a self-install with no audit trail.' },
+  { num: 5, badge: '10 hrs + 3 days', title: 'It works! ...for 72 hours.', detail: 'Then tokens expire, an update breaks your config, memory drifts, and your agent forgets everything about your clients. You\'re back to YouTube at midnight.' },
+  { num: 6, badge: '15+ hrs gone', title: 'Attempt #2, #3, #4...', detail: 'Still no model routing, no session prep automation, no pipeline tracking, no security hardening. You have a basic chatbot on a VPS, not the AI practice manager you were promised.' },
 ]
 
 export default function WhyNotDIY() {
@@ -50,10 +50,10 @@ export default function WhyNotDIY() {
           <div className="relative overflow-hidden rounded-xl border-[0.75px] border-border bg-surface p-8">
             <h3 className="font-heading text-base font-semibold text-white">Your Time Has a Price Tag.</h3>
             <p className="font-body text-sm text-white mt-3 leading-relaxed">
-              At even $300/hour for a founder&apos;s time, 15 hours of fumbling in the dark costs $4,500 in opportunity cost alone. And you still won&apos;t have the security hardening, model routing, or multi-agent architecture we deploy in 48 hours.
+              At $300-$500/hour, which is what high-ticket executive coaches bill, 15 hours of fumbling in the dark costs $4,500-$7,500 in lost coaching time alone. And you still won&apos;t have the security, the client integrations, or the multi-agent workflows we deploy in 48 hours.
             </p>
             <p className="text-white text-sm font-medium mt-4">
-              Or you hand it to us for $1,795 and wake up with the{' '}<span className="text-valo">lights on</span>.
+              Or you hand it to us for $1,795 and wake up with your{' '}<span className="text-valo">practice running itself</span>.
             </p>
             <button onClick={scrollToOffer} className="mt-8 px-6 py-3 border border-white text-white bg-transparent rounded-lg text-sm font-medium cursor-pointer hover:bg-white hover:text-black transition-all duration-200">
               Let Us Build It &rarr;

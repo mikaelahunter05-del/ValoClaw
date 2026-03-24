@@ -63,7 +63,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-between text-center min-h-screen px-5 pt-28 md:pt-36 pb-12 md:pb-16">
         <div className="flex flex-col items-center">
           <motion.p {...fade(0.2)} className="text-xs tracking-[0.3em] uppercase text-white font-medium font-body mb-6">
-            For Founders &amp; CEOs Who Refuse to Stay in the Dark
+            For High-Ticket Coaches Who Refuse to Stay Stuck at 13 Clients
           </motion.p>
 
           <motion.div
@@ -75,14 +75,14 @@ export default function Hero() {
               <TypewriterHighlight text="Bring Light to the Chaos" highlight="Light" highlightClass="text-valo" delay={0.5} duration={1.8} />
             </h1>
             <p className="font-heading font-bold text-xl sm:text-2xl md:text-3xl text-white mt-3 tracking-[-0.01em]">
-              <TypewriterHighlight text="Your AI Workforce, Deployed in 48 Hours." highlight="48 Hours" highlightClass="text-valo" delay={2.5} duration={1.7} />
+              <TypewriterHighlight text="Your AI Practice Manager, Deployed in 48 Hours." highlight="48 Hours" highlightClass="text-valo" delay={2.5} duration={1.7} />
             </p>
           </motion.div>
 
           <motion.p {...fade(4.5)} className="font-body text-sm md:text-base text-white font-bold max-w-2xl mt-8 leading-relaxed">
-            White-glove OpenClaw deployment for founders and exec teams.
+            White-glove OpenClaw deployment for business and executive coaches.
             We handle the install, security, integrations, and ongoing
-            care. You just text your AI and run your business.
+            care. You just text your AI and coach your clients.
           </motion.p>
         </div>
 

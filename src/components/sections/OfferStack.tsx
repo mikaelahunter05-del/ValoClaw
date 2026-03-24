@@ -4,26 +4,26 @@ import SectionLabel from '@/components/ui/SectionLabel'
 import { GlowingEffect } from '@/components/ui/glowing-effect'
 
 const valoCoreItems = [
-  'Discovery call to map your workflows and goals',
+  'Discovery call to map your coaching workflows and client journey',
   'Dedicated cloud server provisioned and deployed',
-  'Full personality and business context programming',
+  'Full personality and practice context programming. Knows your frameworks, your clients, your voice',
   'Security hardening (sandbox, firewall, spend limits, kill switch)',
   'Optimised AI model configuration. Your AI runs for $20-55/month, not $200-500/month like most setups',
   'Telegram setup. Text your AI like a personal assistant',
   'Google Workspace integration (Gmail, Calendar, Drive)',
-  '1 custom automation (morning brief, email alerts, or your choice)',
+  '1 custom automation (morning brief, session prep, email alerts, or your choice)',
   '14-day ValoGuard support',
   'Complete handover documentation. You own everything',
 ]
 
 const valoPrimeItems = [
-  'Full operational audit. We find every hour you\'re losing',
-  'Custom AI workforce. Agents built for your specific roles',
-  'Dedicated automations. Morning briefs, email triage, follow-ups, reports',
-  'Deep integrations. Your CRM, your tools, your stack',
-  'Multi-agent orchestration. Your AI team works in parallel',
+  'Full practice audit. We find every hour you\'re losing to non-coaching work',
+  'Custom AI workforce. Agents built for your specific coaching workflows',
+  'Dedicated automations. Session prep, client recaps, follow-up sequences, referral tracking, content drafting',
+  'Deep integrations. Zoom, HubSpot, Calendly, Stripe, your scheduling tools, your CRM',
+  'Multi-agent orchestration. Your AI team handles prospecting, content, and ops in parallel',
   'ValoGuard included. 30 days of managed optimisation',
-  'Complete handover. You own every agent, every workflow, everything',
+  'Complete handover. You own every agent, every workflow, every piece of data',
 ]
 
 export default function OfferStack() {
@@ -47,20 +47,9 @@ export default function OfferStack() {
             One flat fee. No subscriptions. No hidden costs. You own everything we build.
           </motion.p>
 
-          {/* Tabs */}
           <div className="flex justify-center gap-8 mb-12">
-            <button
-              onClick={() => scrollToCard('valocore-card')}
-              className="text-xs uppercase tracking-widest text-white border-b-2 border-valo pb-2 cursor-pointer transition-colors duration-200"
-            >
-              One Agent
-            </button>
-            <button
-              onClick={() => scrollToCard('valoprime-card')}
-              className="text-xs uppercase tracking-widest text-[#888888] hover:text-white pb-2 border-b-2 border-transparent hover:border-[#888888] cursor-pointer transition-colors duration-200"
-            >
-              Full Infrastructure
-            </button>
+            <button onClick={() => scrollToCard('valocore-card')} className="text-xs uppercase tracking-widest text-white border-b-2 border-valo pb-2 cursor-pointer transition-colors duration-200">One Agent</button>
+            <button onClick={() => scrollToCard('valoprime-card')} className="text-xs uppercase tracking-widest text-[#888888] hover:text-white pb-2 border-b-2 border-transparent hover:border-[#888888] cursor-pointer transition-colors duration-200">Full Infrastructure</button>
           </div>
         </div>
 
@@ -69,12 +58,11 @@ export default function OfferStack() {
           <GlowingEffect spread={50} glow disabled={false} proximity={80} inactiveZone={0.01} borderWidth={4} />
           <div className="relative overflow-hidden rounded-xl border-[0.75px] border-border bg-surface p-8 md:p-10">
             <span className="text-xs uppercase tracking-widest text-white/70">ValoCore</span>
-            <p className="font-body text-sm text-white mt-3">Your AI assistant, deployed, secured, and running in 48 hours.</p>
+            <p className="font-body text-sm text-white mt-3">Your AI practice manager, deployed, secured, and running in 48 hours.</p>
             <div className="mt-6">
               <span className="font-mono text-4xl font-bold text-white">$1,795</span>
               <span className="text-xs text-white/60 ml-2">one-time setup</span>
             </div>
-
             <div className="mt-8 space-y-3">
               {valoCoreItems.map((item) => (
                 <div key={item} className="flex items-start gap-3">
@@ -83,7 +71,6 @@ export default function OfferStack() {
                 </div>
               ))}
             </div>
-
             <button onClick={scrollToBook} className="w-full mt-8 py-3.5 bg-white text-black rounded-lg text-sm font-medium cursor-pointer hover:bg-white/90 transition-colors duration-200">
               Book Your Discovery Call &rarr;
             </button>
@@ -95,21 +82,14 @@ export default function OfferStack() {
           <GlowingEffect spread={50} glow disabled={false} proximity={80} inactiveZone={0.01} borderWidth={4} />
           <div className="relative overflow-hidden rounded-xl border-[0.75px] border-border border-t-2 border-t-valo bg-surface p-8 md:p-12">
             <span className="text-xs uppercase tracking-widest text-valo">ValoPrime</span>
-            <p className="font-body text-base md:text-lg text-[#b0b0b0] mt-2">
-              Your entire operation, audited, architected, and automated.
-            </p>
+            <p className="font-body text-base md:text-lg text-[#b0b0b0] mt-2">Your entire coaching practice, audited, architected, and automated.</p>
             <p className="font-body text-sm text-[#b0b0b0] leading-relaxed mt-4 max-w-lg mx-auto text-center">
-              We don&apos;t just deploy an assistant. We audit every hour you&apos;re wasting,
-              map every workflow that&apos;s bleeding time, and build the AI infrastructure
-              to run your operation. Custom agents, custom automations, custom integrations,
-              architected around how your business actually works.
+              We don&apos;t just deploy an assistant. We audit every hour you&apos;re losing to admin, session prep, and pipeline leakage. Then we build the AI infrastructure to run your practice. Custom agents for client management, prospecting, content, and operations. Architected around how your coaching business actually works.
             </p>
-
             <div className="mt-8 text-center">
               <span className="font-heading text-4xl md:text-5xl font-bold text-white">From $4,000+</span>
-              <p className="text-sm text-[#888888] mt-1">scoped to your operation</p>
+              <p className="text-sm text-[#888888] mt-1">scoped to your practice</p>
             </div>
-
             <div className="mt-8 space-y-3">
               {valoPrimeItems.map((item) => (
                 <div key={item} className="flex items-start gap-3">
@@ -118,17 +98,13 @@ export default function OfferStack() {
                 </div>
               ))}
             </div>
-
             <button onClick={scrollToBook} className="w-full mt-8 py-3.5 bg-white text-black rounded-lg text-sm font-medium cursor-pointer hover:bg-white/90 transition-colors duration-200">
               Apply for ValoPrime &rarr;
             </button>
-            <p className="text-xs text-[#888888] mt-4 italic text-center">
-              Starts with a free discovery call. We&apos;ll scope your build and quote a fixed price. No surprises.
-            </p>
+            <p className="text-xs text-[#888888] mt-4 italic text-center">Starts with a free discovery call. We&apos;ll scope your build and quote a fixed price. No surprises.</p>
           </div>
         </motion.div>
 
-        {/* Trust line */}
         <p className="mt-16 text-xs text-[#888888] leading-relaxed text-center max-w-xl mx-auto">
           Both plans include full handover. You own your server, your agents, your data. No lock-in. No recurring fees unless you choose ValoGuard.
         </p>
