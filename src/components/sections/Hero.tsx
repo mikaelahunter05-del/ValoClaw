@@ -49,37 +49,6 @@ function TypewriterHighlight({ text, highlight, highlightClass, delay = 0, durat
   )
 }
 
-function Typewriter({ text, delay = 0, duration = 3.5 }: { text: string; delay?: number; duration?: number }) {
-  const [displayed, setDisplayed] = useState('')
-  const [started, setStarted] = useState(false)
-
-  useEffect(() => {
-    const startTimer = setTimeout(() => setStarted(true), delay * 1000)
-    return () => clearTimeout(startTimer)
-  }, [delay])
-
-  useEffect(() => {
-    if (!started) return
-    const interval = (duration * 1000) / text.length
-    let i = 0
-    const timer = setInterval(() => {
-      i++
-      setDisplayed(text.slice(0, i))
-      if (i >= text.length) clearInterval(timer)
-    }, interval)
-    return () => clearInterval(timer)
-  }, [started, text, duration])
-
-  return (
-    <>
-      {displayed}
-      {started && displayed.length < text.length && (
-        <span className="inline-block w-[2px] h-[1em] bg-valo ml-0.5 align-middle animate-pulse" />
-      )}
-    </>
-  )
-}
-
 export default function Hero() {
   const scrollToBook = () => {
     document.getElementById('book')?.scrollIntoView({ behavior: 'smooth' })
