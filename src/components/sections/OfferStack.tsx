@@ -71,7 +71,7 @@ export default function OfferStack() {
             <span className="text-xs uppercase tracking-widest text-white/70">ValoCore</span>
             <p className="font-body text-sm text-white mt-3">Your AI assistant, deployed, secured, and running in 48 hours.</p>
             <div className="mt-6">
-              <span className="font-mono text-4xl font-bold text-white">$2,795</span>
+              <span className="font-mono text-4xl font-bold text-white">$1,795</span>
               <span className="text-xs text-white/60 ml-2">one-time setup</span>
             </div>
 
@@ -106,7 +106,7 @@ export default function OfferStack() {
             </p>
 
             <div className="mt-8 text-center">
-              <span className="font-heading text-4xl md:text-5xl font-bold text-white">From $6,795</span>
+              <span className="font-heading text-4xl md:text-5xl font-bold text-white">From $4,000+</span>
               <p className="text-sm text-[#888888] mt-1">scoped to your operation</p>
             </div>
 

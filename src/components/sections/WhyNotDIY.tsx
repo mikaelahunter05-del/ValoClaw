@@ -53,7 +53,7 @@ export default function WhyNotDIY() {
               At even $300/hour for a founder&apos;s time, 15 hours of fumbling in the dark costs $4,500 in opportunity cost alone. And you still won&apos;t have the security hardening, model routing, or multi-agent architecture we deploy in 48 hours.
             </p>
             <p className="text-white text-sm font-medium mt-4">
-              Or you hand it to us for $2,795 and wake up with the{' '}<span className="text-valo">lights on</span>.
+              Or you hand it to us for $1,795 and wake up with the{' '}<span className="text-valo">lights on</span>.
             </p>
             <button onClick={scrollToOffer} className="mt-8 px-6 py-3 border border-white text-white bg-transparent rounded-lg text-sm font-medium cursor-pointer hover:bg-white hover:text-black transition-all duration-200">
               Let Us Build It &rarr;
