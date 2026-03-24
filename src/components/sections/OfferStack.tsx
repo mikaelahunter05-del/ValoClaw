@@ -3,7 +3,7 @@ import { Check, Shield } from 'lucide-react'
 import SectionLabel from '@/components/ui/SectionLabel'
 import { GlowingEffect } from '@/components/ui/glowing-effect'
 
-const valueItems = [
+const valoCoreItems = [
   'Discovery call to map your workflows and goals',
   'Dedicated cloud server provisioned and deployed',
   'Full personality and business context programming',
@@ -16,9 +16,23 @@ const valueItems = [
   'Complete handover documentation. You own everything',
 ]
 
+const valoPrimeItems = [
+  'Full operational audit. We find every hour you\'re losing',
+  'Custom AI workforce. Agents built for your specific roles',
+  'Dedicated automations. Morning briefs, email triage, follow-ups, reports',
+  'Deep integrations. Your CRM, your tools, your stack',
+  'Multi-agent orchestration. Your AI team works in parallel',
+  'ValoGuard included. 30 days of managed optimisation',
+  'Complete handover. You own every agent, every workflow, everything',
+]
+
 export default function OfferStack() {
   const scrollToBook = () => {
     document.getElementById('book')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const scrollToCard = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'center' })
   }
 
   return (
@@ -29,13 +43,29 @@ export default function OfferStack() {
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-heading text-2xl md:text-3xl font-bold text-white mb-4 tracking-[-0.02em]">
             Everything You Need. Nothing You Don&apos;t.
           </motion.h2>
-          <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-body text-sm md:text-base text-white max-w-2xl mx-auto mb-16 leading-relaxed">
+          <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="font-body text-sm md:text-base text-white max-w-2xl mx-auto mb-8 leading-relaxed">
             One flat fee. No subscriptions. No hidden costs. You own everything we build.
           </motion.p>
+
+          {/* Tabs */}
+          <div className="flex justify-center gap-8 mb-12">
+            <button
+              onClick={() => scrollToCard('valocore-card')}
+              className="text-xs uppercase tracking-widest text-white border-b-2 border-valo pb-2 cursor-pointer transition-colors duration-200"
+            >
+              One Agent
+            </button>
+            <button
+              onClick={() => scrollToCard('valoprime-card')}
+              className="text-xs uppercase tracking-widest text-[#888888] hover:text-white pb-2 border-b-2 border-transparent hover:border-[#888888] cursor-pointer transition-colors duration-200"
+            >
+              Full Infrastructure
+            </button>
+          </div>
         </div>
 
-        {/* Main pricing card */}
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="max-w-3xl mx-auto relative rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3">
+        {/* ValoCore Card */}
+        <motion.div id="valocore-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="max-w-3xl mx-auto relative rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3">
           <GlowingEffect spread={50} glow disabled={false} proximity={80} inactiveZone={0.01} borderWidth={4} />
           <div className="relative overflow-hidden rounded-xl border-[0.75px] border-border bg-surface p-8 md:p-10">
             <span className="text-xs uppercase tracking-widest text-white/70">ValoCore</span>
@@ -46,7 +76,7 @@ export default function OfferStack() {
             </div>
 
             <div className="mt-8 space-y-3">
-              {valueItems.map((item) => (
+              {valoCoreItems.map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <Check className="w-4 h-4 text-valo shrink-0 mt-0.5" />
                   <span className="text-sm text-white">{item}</span>
@@ -60,31 +90,48 @@ export default function OfferStack() {
           </div>
         </motion.div>
 
-        {/* Beyond ValoCore */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4 }}
-          className="mt-16 text-center max-w-2xl mx-auto"
-        >
-          <span className="text-xs uppercase tracking-widest text-[#999999]">
-            &mdash; Beyond ValoCore
-          </span>
-          <h3 className="font-heading text-2xl md:text-3xl font-bold text-white mt-6">
-            Need More Than an Assistant?
-          </h3>
-          <p className="font-body text-sm md:text-base text-[#b0b0b0] mt-4 leading-relaxed">
-            ValoPrime is our bespoke engagement for founders who want more than
-            a setup. We audit your entire operation, identify every hour
-            you&apos;re wasting, and build the AI infrastructure to get it back.
-            Custom agents, custom workflows, custom integrations, architected
-            around how your business actually runs. Apply on your discovery call.
-          </p>
-          <p className="text-xs text-[#888888] mt-6 italic">
-            Limited availability. Pricing based on scope.
-          </p>
+        {/* ValoPrime Card */}
+        <motion.div id="valoprime-card" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="max-w-3xl mx-auto mt-8 relative rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3">
+          <GlowingEffect spread={50} glow disabled={false} proximity={80} inactiveZone={0.01} borderWidth={4} />
+          <div className="relative overflow-hidden rounded-xl border-[0.75px] border-border border-t-2 border-t-valo bg-surface p-8 md:p-12">
+            <span className="text-xs uppercase tracking-widest text-valo">ValoPrime</span>
+            <p className="font-body text-base md:text-lg text-[#b0b0b0] mt-2">
+              Your entire operation, audited, architected, and automated.
+            </p>
+            <p className="font-body text-sm text-[#b0b0b0] leading-relaxed mt-4 max-w-lg mx-auto text-center">
+              We don&apos;t just deploy an assistant. We audit every hour you&apos;re wasting,
+              map every workflow that&apos;s bleeding time, and build the AI infrastructure
+              to run your operation. Custom agents, custom automations, custom integrations,
+              architected around how your business actually works.
+            </p>
+
+            <div className="mt-8 text-center">
+              <span className="font-heading text-4xl md:text-5xl font-bold text-white">From $8,000</span>
+              <p className="text-sm text-[#888888] mt-1">scoped to your operation</p>
+            </div>
+
+            <div className="mt-8 space-y-3">
+              {valoPrimeItems.map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <Check className="w-4 h-4 text-valo shrink-0 mt-0.5" />
+                  <span className="text-sm text-white">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <button onClick={scrollToBook} className="w-full mt-8 py-3.5 bg-white text-black rounded-lg text-sm font-medium cursor-pointer hover:bg-white/90 transition-colors duration-200">
+              Apply for ValoPrime &rarr;
+            </button>
+            <p className="text-xs text-[#888888] mt-4 italic text-center">
+              Starts with a free discovery call. We&apos;ll scope your build and quote a fixed price. No surprises.
+            </p>
+          </div>
         </motion.div>
+
+        {/* Trust line */}
+        <p className="mt-16 text-xs text-[#888888] leading-relaxed text-center max-w-xl mx-auto">
+          Both plans include full handover. You own your server, your agents, your data. No lock-in. No recurring fees unless you choose ValoGuard.
+        </p>
 
         {/* Guarantee */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="mt-16 max-w-2xl mx-auto relative rounded-[1.25rem] border-[0.75px] border-border p-2 md:rounded-[1.5rem] md:p-3">
