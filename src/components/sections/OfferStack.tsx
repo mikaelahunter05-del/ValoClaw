@@ -106,7 +106,7 @@ export default function OfferStack() {
             </p>
 
             <div className="mt-8 text-center">
-              <span className="font-heading text-4xl md:text-5xl font-bold text-white">From $8,000</span>
+              <span className="font-heading text-4xl md:text-5xl font-bold text-white">From $6,795</span>
               <p className="text-sm text-[#888888] mt-1">scoped to your operation</p>
             </div>
 
